@@ -1,54 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="pt-br">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Calculador de Atributos</title>
-  
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-	<link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
-</head>
+	  <title>Calculador de Atributos</title>
 
-<body>
-	  <div id="app">
-		<div class="container">
-				  <h1 class="title mt-2">Clique na classificação do seu jogo</h1>
-					  <b-field>
-						  <b-button type="is-primary" outlined onclick="calcular (66)" class="ml-1">Baixa Fantasia</b-button>
-						  <b-button type="is-success" outlined onclick="calcular (72)" class="ml-1">Fantasia Padrão</b-button>
-						  <b-button type="is-danger" outlined onclick="calcular (78)" class="ml-1">Alta Fantasia</b-button>
-						  <b-button type="is-info" outlined onclick="calcular (84)" class="ml-1">Fantasia Épica</b-button> 
-						  <b-input class="ml-1" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></b-input><b-button type="is-dark" onclick="calcularPersonalizado ()">Personalizado</b-button>
-					  </b-field>
-					  
-					  <p>Seus atributos: <span id="resultado"></span></p>
-					  <span id="pontosExtras"></span>
-					  <br>
-					  </br>
-					  <span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span><br>
-					  <span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br>
-					  <span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br>
-					  <span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br>
-					  <span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span><br>
-		</div>
-	  </div>
-  <!-- Project -->
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-   <!-- Full bundle -->
-    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+		<link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+	</head>
 
-    <!-- Individual components -->
-    <script src="https://unpkg.com/buefy/dist/components/table"></script>
-    <script src="https://unpkg.com/buefy/dist/components/input"></script>
+	<body>
+		  <div id="app">
+			<div class="container">
+				<h1 class="title mt-2">Clique na classificação do seu jogo</h1>
+				<b-field>
+					<b-button type="is-primary" outlined onclick="calcular (66)" class="ml-1">Baixa Fantasia</b-button>
+					<b-button type="is-success" outlined onclick="calcular (72)" class="ml-1">Fantasia Padrão</b-button>
+					<b-button type="is-danger" outlined onclick="calcular (78)" class="ml-1">Alta Fantasia</b-button>
+					<b-button type="is-info" outlined onclick="calcular (84)" class="ml-1">Fantasia Épica</b-button> 
+					<b-input class="ml-1" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></b-input><b-button type="is-dark" onclick="calcularPersonalizado ()">Personalizado</b-button>
+				</b-field>		  
+				<p>Seus atributos: <span id="resultado"></span></p>
+				<span id="pontosExtras"></span>
+				<br></br>
+				<span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span><br>
+				<span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br>
+				<span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br>
+				<span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br>
+				<span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span><br>
+			</div>
+		  </div>
+		  <!-- Project -->
+		  <script src="main.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+		  <!-- Full bundle -->
+		  <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
 
-    <script>
-        new Vue({
-            el: '#app'
-        })
-    </script>
-</body>
+		  <!-- Individual components -->
+		  <script src="https://unpkg.com/buefy/dist/components/table"></script>
+		  <script src="https://unpkg.com/buefy/dist/components/input"></script>
+
+		   <script>
+			new Vue({
+			    el: '#app'
+			})
+		   </script>
+	</body>
 </html>
