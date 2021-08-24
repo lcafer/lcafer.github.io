@@ -14,13 +14,28 @@
 				<div class="container">
 					<div class="column">
 						  	<h1 class="title mt-2">Clique na classificação do seu jogo</h1>
-						
-						  	<b-button type="is-primary" outlined onclick="calcular (66)" class="ml-1">Baixa Fantasia</b-button> 
-						  	<b-button type="is-success" outlined onclick="calcular (72)" class="ml-1">Fantasia Padrão</b-button>
-						  	<b-button type="is-danger" outlined onclick="calcular (78)" class="ml-1">Alta Fantasia</b-button>
-						  	<b-button type="is-info" outlined onclick="calcular (84)" class="ml-1">Fantasia Épica</b-button> 
-						  	<b-input class="ml-1" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></b-input><b-button class="ml-1" type="is-dark" onclick="calcularPersonalizado ()">Personalizado</b-button>
-							  
+							
+							<div class="field is-grouped is-grouped-multiline">
+								<p class="control">
+									<a onclick="calcular (66)" class="button">Baixa Fantasia</a> 
+								</p>
+								<p class="control">
+									<a onclick="calcular (72)" class="button">Fantasia Padrão</a>
+								</p>
+								<p class="control">
+									<a onclick="calcular (78)" class="button">Alta Fantasia</a>
+								</p>
+								<p class="control">
+								<a  onclick="calcular (84)" class="button">Fantasia Épica</a> 
+								</p>
+								<div class="field has-addons">
+								<div class="control">
+									<input class="input is-rounded" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></input>
+								</div>
+								<div class="control">
+									<a class="button is-dark" onclick="calcularPersonalizado ()">Personalizado</a>
+								</div>	
+							</div>
 
 							<p>Seus atributos: <span id="resultado"></span></p>
 							<span id="pontosExtras"></span>
