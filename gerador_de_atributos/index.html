@@ -11,41 +11,55 @@
 	<body>
 			<section class="section">
 				<div class="container">
-					<div class="column">
-						  	<h1 class="title mt-2">Clique na classificação do seu jogo</h1>
-							
-							<div class="field is-grouped is-grouped-multiline">
-								<p class="control">
-									<a onclick="calcular (66)" class="button is-dark">Baixa Fantasia</a> 
-								</p>
-								<p class="control">
-									<a onclick="calcular (72)" class="button is-dark">Fantasia Padrão</a>
-								</p>
-								<p class="control">
-									<a onclick="calcular (78)" class="button is-dark">Alta Fantasia</a>
-								</p>
-								<p class="control">
-								<a  onclick="calcular (84)" class="button is-dark">Fantasia Épica</a> 
-								</p>
-								<div class="field has-addons">
-									<div class="control">
-										<input class="input is-rounded" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></input>
+					<div class="columns">
+						<div class="column">
+								<h1 class="title mt-2">Clique na classificação do seu jogo</h1>
+
+								<div class="field is-grouped is-grouped-multiline">
+									<p class="control">
+										<a onclick="calcular (66)" class="button is-dark">Baixa Fantasia</a> 
+									</p>
+									<p class="control">
+										<a onclick="calcular (72)" class="button is-dark">Fantasia Padrão</a>
+									</p>
+									<p class="control">
+										<a onclick="calcular (78)" class="button is-dark">Alta Fantasia</a>
+									</p>
+									<p class="control">
+									<a  onclick="calcular (84)" class="button is-dark">Fantasia Épica</a> 
+									</p>
+									<div class="field has-addons">
+										<div class="control">
+											<input class="input is-rounded" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></input>
+										</div>
+										<div class="control">
+											<a class="button is-dark" onclick="calcularPersonalizado ()">Personalizado</a>
+										</div>	
 									</div>
-									<div class="control">
-										<a class="button is-dark" onclick="calcularPersonalizado ()">Personalizado</a>
-									</div>	
+								</div>
+
+								<p>Seus atributos: <span id="resultado"></span></p>
+								<span id="pontosExtras"></span>		
+						</div>
+						<div class="column">
+							<div class="content">
+								<div class="block">
+								<span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span>
+								</div>
+								<div class="block">
+								<span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span>
+								</div>	
+								<div class="block">
+								<span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span>
+								</div>
+								<div class="block">
+								<span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span>
+								</div>	
+								<div class="block">
+								<span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span>
 								</div>
 							</div>
-						
-							<p>Seus atributos: <span id="resultado"></span></p>
-							<span id="pontosExtras"></span>
-							<br>
-							</br>
-							<span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span><br>
-							<span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br>
-							<span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br>
-							<span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br>
-							<span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span><br>
+						</div>
 					</div>
 				</div>
 			</section> 
