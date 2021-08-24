@@ -13,26 +13,28 @@
 
 <body>
 	  <div id="app">
-		<div class="container">
-				  <h1 class="title mt-2">Clique na classificação do seu jogo</h1>
-					  <b-field>
-						  <b-button type="is-primary" outlined onclick="calcular (66)" class="ml-1">Baixa Fantasia</b-button>
-						  <b-button type="is-success" outlined onclick="calcular (72)" class="ml-1">Fantasia Padrão</b-button>
-						  <b-button type="is-danger" outlined onclick="calcular (78)" class="ml-1">Alta Fantasia</b-button>
-						  <b-button type="is-info" outlined onclick="calcular (84)" class="ml-1">Fantasia Épica</b-button> 
-						  <b-input class="ml-1" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></b-input><b-button class="ml-1" type="is-dark" onclick="calcularPersonalizado ()">Personalizado</b-button>
-					  </b-field>
-					  
-					  <p>Seus atributos: <span id="resultado"></span></p>
-					  <span id="pontosExtras"></span>
-					  <br>
-					  </br>
-					  <span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span><br>
-					  <span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br>
-					  <span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br>
-					  <span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br>
-					  <span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span><br>
-		</div>
+		<section class="section">
+			<div class="container">
+					  <h1 class="title mt-2">Clique na classificação do seu jogo</h1>
+						  <b-field>
+							  <b-button type="is-primary" outlined onclick="calcular (66)" class="ml-1">Baixa Fantasia</b-button>
+							  <b-button type="is-success" outlined onclick="calcular (72)" class="ml-1">Fantasia Padrão</b-button>
+							  <b-button type="is-danger" outlined onclick="calcular (78)" class="ml-1">Alta Fantasia</b-button>
+							  <b-button type="is-info" outlined onclick="calcular (84)" class="ml-1">Fantasia Épica</b-button> 
+							  <b-input class="ml-1" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></b-input><b-button class="ml-1" type="is-dark" onclick="calcularPersonalizado ()">Personalizado</b-button>
+						  </b-field>
+
+						  <p>Seus atributos: <span id="resultado"></span></p>
+						  <span id="pontosExtras"></span>
+						  <br>
+						  </br>
+						  <span><strong>Baixa Fantasia:</strong> 66 pontos de atributos</span><br>
+						  <span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br>
+						  <span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br>
+						  <span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br>
+						  <span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span><br>
+			</div>
+		</section> 
 	  </div>
   <!-- Project -->
   <script src="main.js"></script>
