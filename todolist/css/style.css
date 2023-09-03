@@ -1,0 +1,124 @@
+body {
+  background-color: #fffafa;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.list-container {
+  margin-left: 3em;
+  margin-top: 3em;
+  border-style:dotted;
+  border-color: #dddddd;
+  background-color: #f5f5f5;
+  flex-grow: .4;
+  width: 70%;
+  margin-right: 3em;
+}
+
+header {
+  border-color: #dddddd;
+  border-bottom-style: inset;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.text {
+  font-family: Anonymous Pro;
+  font-weight: normal;
+  color: #545454;
+}
+
+h1 {
+  padding: 1em;
+  font-size: 20px;
+}
+
+input[type=text] {
+  border: 2px solid #545454;
+  border-radius: 4px;
+  background: #dddddd;  
+}
+
+h3 {
+  padding-left: 2.1em;
+  padding-top: 1.35em;
+  font-size: 16px;
+}
+
+.menu-top {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu-list {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu-top:hover, .btn-nav:hover {
+  transition-duration: 0.2s;
+}
+
+.menu-top:hover {
+  border-bottom: #545454;
+  border-bottom-style: inset;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 1em;
+}
+
+.btn-nav {
+  background: none;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-nav:hover {
+  background-color: #545454;
+  color: #dddddd;
+}
+
+.tarefas-item {
+  background-color: #dddddd;
+  margin-bottom: 1em;
+  margin-right: 5em;
+  margin-left: 6%;
+  height: 3em;
+  list-style-type: "";
+  padding-top: 1em;
+  padding-left: 1em;
+  width: 83%;
+}
+
+.tarefas-titulo {
+  float: left;
+  width: 70%;
+}
+
+.end-text-tarefas {
+  margin-right: 1em;
+}
+
+#box {
+  float: right;
+  width: 25%;
+}
+
+
+.end-text-nav {
+  margin-left: 17em;
+}
