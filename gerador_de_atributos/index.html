@@ -1,67 +1,69 @@
 <!DOCTYPE html>
-<html class="has-background-info-dark" lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<title>Calculador de Atributos</title>
-	 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
-	</head>
-
-	<body>
-			<section class="section">
-				<div class="container">
-						<div class="column is-full">
-								<h1 class="title mt-2 has-text-success-light">Clique na classificação do seu jogo</h1>
-
-								<div class="field is-grouped is-grouped-multiline">
-									<p class="control">
-										<a onclick="calcular (66)" class="button is-dark">Baixa Fantasia</a> 
-									</p>
-									<p class="control">
-										<a onclick="calcular (72)" class="button is-dark">Fantasia Padrão</a>
-									</p>
-									<p class="control">
-										<a onclick="calcular (78)" class="button is-dark">Alta Fantasia</a>
-									</p>
-									<p class="control">
-									<a  onclick="calcular (84)" class="button is-dark">Fantasia Épica</a> 
-									</p>
-									<div class="field has-addons">
-										<div class="control">
-											<input class="input is-rounded" placeholder="Qtd. de Pontos" id="personalizado" min="2" max="2"></input>
-										</div>
-										<div class="control">
-											<a class="button is-dark" onclick="calcularPersonalizado ()">Personalizado</a>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</div>
-							<div class="container">
-								<div class="column is-full">
-									<div class="box has-background-link-light">
-										<div class="content">
-											<div class="block">
-
-												<p>Seus atributos: <span id="resultado"></span></p>
-												<span id="pontosExtras"></span>	
-											</div>
-											<div class="block">
-												<span><strong class=>Baixa Fantasia:</strong> 66 pontos de atributos</span><br />
-												<span><strong>Fantasia Padrão:</strong> 72 pontos de atributos</span><br />
-												<span><strong>Alta Fantasia:</strong> 78 pontos de atributos</span><br />
-												<span><strong>Fantasia Épica:</strong> 84 pontos de atributos</span><br />
-												<span><strong>Personalizado:</strong> A quantidade de pontos que você quiser</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-					</section>
-			
-	  <!-- Project -->
-	  <script src="main.js"></script>
-	</body>
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculador de Atributos</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Calculador de Atributos</h1>
+        <button id="toggleTheme" class="theme-toggle">Tema Claro</button>
+      </div>
+    </header>
+    <main>
+      <section class="game-selection">
+        <p class="instruction">Clique na classificação do seu jogo</p>
+        <div class="button-group">
+          <button id="btnBaixa" data-pontos="66">Baixa Fantasia</button>
+          <button id="btnPadrao" data-pontos="72">Fantasia Padrão</button>
+          <button id="btnAlta" data-pontos="78">Alta Fantasia</button>
+          <button id="btnEpica" data-pontos="84">Fantasia Épica</button>
+          <div class="personalizado">
+            <input
+              type="number"
+              id="personalizado"
+              placeholder="Qtd. de Pontos"
+              min="6"
+              step="6"
+            />
+            <button id="btnPersonalizado">Personalizado</button>
+          </div>
+        </div>
+      </section>
+      <section class="resultados">
+        <div class="resultado-box">
+          <p>
+            Seus atributos:
+            <span id="resultado"></span>
+          </p>
+          <p id="pontosExtras"></p>
+        </div>
+        <div class="info">
+          <p>
+            <strong>Baixa Fantasia:</strong> 66 pontos de atributos
+          </p>
+          <p>
+            <strong>Fantasia Padrão:</strong> 72 pontos de atributos
+          </p>
+          <p>
+            <strong>Alta Fantasia:</strong> 78 pontos de atributos
+          </p>
+          <p>
+            <strong>Fantasia Épica:</strong> 84 pontos de atributos
+          </p>
+          <p>
+            <strong>Personalizado:</strong> A quantidade de pontos que você quiser
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
+
+
+

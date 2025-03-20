@@ -1,0 +1,168 @@
+/* Tema Dark (padrão)*/
+:root {
+    --background: #121212;
+    --surface: #1e1e1e;
+    --primary: #2980b9;
+    --primary-hover: #1c5980;
+    --text: #e0e0e0;
+    --header-bg: #333333;
+    --border: 1px solid #333333;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Overrides para tema Light */
+  :root[data-theme="light"] {
+    --background: #f4f7f6;
+    --surface: #ffffff;
+    --primary: #2980b9;
+    --primary-hover: #1c5980;
+    --text: #333333;
+    --header-bg: #34495e;
+    --border: 1px solid #ccc;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reset e configurações básicas */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text);
+    background-color: var(--background);
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: var(--header-bg);
+    padding: 20px;
+  }
+  
+  .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #fff
+  }
+  
+  /* Botão de toggle de tema */
+  .theme-toggle {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  /* Área principal */
+  main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  /* Seções */
+  section {
+    background-color: var(--surface);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Instrução */
+  .game-selection .instruction {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  /* Grupo de botões (todos em linha) */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  /* Botões de ação */
+  .button-group button,
+  .button-group .personalizado button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .button-group button:hover,
+  .button-group .personalizado button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  /* Personalizado: Input e botão */
+  .personalizado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  
+  .personalizado input {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    width: 120px;
+    font-size: 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+    transition: border-color 0.3s ease;
+  }
+  
+  .personalizado input:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  /* Seção de Resultados */
+  .resultados .resultado-box {
+    background-color: var(--surface);
+    border: var(--border);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .info p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }  
+  
